@@ -20,13 +20,13 @@ class ViewController: UIViewController {
         let minAmoutn = 13330
         // 2- declear the nasap
         let nasap = 40
-        var input = Int(total.text!)
+        var input = Int(total.text!) // change value from String to Int
         // 3- compare between user input and minum amount
         if input == nil {//this prevent app from crash if user press button and textfield is empty
             print("nil")
             label.text = ""
         } else {
-      
+            
             if input! <= minAmoutn {
                 label.text = "ليس فيها زكاة"
             } else {
@@ -34,9 +34,8 @@ class ViewController: UIViewController {
                 label.text = "زكاتك تساوي \(zakah)"
             }
         }
-        }
+       
+    }
         
-    
-    
 }
 
